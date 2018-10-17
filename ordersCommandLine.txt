@@ -1,0 +1,2 @@
+cut -f20 DownLoadGenome.list | sed 's/$/\/*protein.faa.gz/' > DownLoadGenome.ftp.list
+wget -i DownLoadGenome.ftp.list
