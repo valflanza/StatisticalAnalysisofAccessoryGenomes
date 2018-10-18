@@ -12,7 +12,6 @@ These are the link to downlods the additional software
 You can download the whole assembly reports table at:  
 
 + ftp://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/assembly_summary.txt (For RefSeq)
-or
 + ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/bacteria/assembly_summary.txt (For GenBank)
 
 These repository includes the files:
