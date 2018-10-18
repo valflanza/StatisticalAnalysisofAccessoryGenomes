@@ -1,6 +1,6 @@
 # Statistical Analysis of Accessory Genomes 
 
-Here you can find all the necessary files and link to complete the workflow proposed on the paper (Miguel Diez Fernández de Bobadilla & Val F. Lanza 2019)
+Here you can find all the necessary files and link to complete the workflow proposed on the paper (Miguel Diez Fernández de Bobadilla & Val F. Lanza, 2019)
 
 These are the link to downlods the additional software
 
@@ -14,7 +14,7 @@ You can download the whole assembly reports table at:
 or
 + ftp://ftp.ncbi.nlm.nih.gov/genomes/genbank/bacteria/assembly_summary.txt (For GenBank)
 
-These repositorie includes the files:
+These repository includes the files:
 + DownLoadGenome.ftp.list	-> The ftp addreses to download the proteomes used in the analysis
 + DownLoadGenome.list		-> The Assembly summary table of the samples used in the analysis
 + ordersCommandLine.txt		-> The bash commands used.
