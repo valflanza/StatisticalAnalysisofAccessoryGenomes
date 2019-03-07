@@ -157,7 +157,7 @@ accnet.full = accnet.full %>%
   mutate(
     OdsRatio =  perClusterFreq / perTotalFreq ,
     pvalue = phyper(
-      ClusterFreq,
+      ClusterFreq-1,
       TotalFreq,
       AccnetGenomeSize - TotalFreq,
       ClusterGenomeSize,
@@ -242,7 +242,7 @@ accnet.ST131 = accnet.ST131 %>% ungroup() %>% group_by(Source) %>% mutate(ST131F
   mutate(perST131Freq = ST131Freq / ST131GenomeSize)
 
 accnet.ST131 = accnet.ST131 %>%
-  mutate(ST131vPopulation_pvalue = phyper(ST131Freq,TotalFreq,AccnetGenomeSize- TotalFreq,ST131GenomeSize, lower.tail = FALSE))
+  mutate(ST131vPopulation_pvalue = phyper(ST131Freq-1,TotalFreq,AccnetGenomeSize- TotalFreq,ST131GenomeSize, lower.tail = FALSE))
 
 accnet.ST131 = accnet.ST131 %>% 
   select(Cluster,Source,ST131vPopulation_pvalue) %>% distinct() %>% group_by(Cluster) %>%
